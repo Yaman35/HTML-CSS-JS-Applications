@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body,
+html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(130, 156, 228);
+}
+
+.container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+form {
+    display: flex;
+    justify-content:space-between
+}
+
+input {
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    font-size: 15px;
+    outline: none;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    padding:0 13px 0 13px;
+    margin-right: 10px;  
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.dutyText {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.deleteAll{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    color:whitesmoke;
+    border-radius: 5px;
+    font-weight: 300;
+    background-color: tomato;
+}
+
+.deleteAll:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+/* Buradan sonrası js ile eklenen elemanlar */
+
+
+.taskItem {                         /* Sonradan oluşturuluna li etiketleri */
+    list-style-position: inside;
+    padding: 5px;
+    margin-top: 20px;
+    height: 35px;
+    font-size: 20px;
+    background-color: wheat;
+    margin-left: -40px;
+    border-radius: 10px;
+}
+
+
+.taskItem.checked {                  /* Buton checked edildiğinde */    
+    color: #fff;
+    text-decoration: line-through;
+    background-color: gray;
+}
+
+
+
+.complete {
+    font-size: 17px;
+    padding: 3px;
+    width: 30px;
+}
+
+.fa-trash {
+    margin: 0 5px;
+    color: red;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+
+
+

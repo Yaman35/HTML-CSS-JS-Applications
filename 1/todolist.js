@@ -43,4 +43,4 @@ const addTask = (e) => {
     if (ev.target.tagName === 'LI') {                   // Eğer tıklananın tag name li ise
     ev.target.classList.toggle('checked');              // classlistine toggle olarak checked ekle
     }
-    }, false);
+    });

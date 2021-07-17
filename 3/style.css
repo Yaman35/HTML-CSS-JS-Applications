@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/521099.jpg);
+    background-size: auto; 
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100rem;   
+}
+
+p {
+    float: right;
+    color: antiquewhite;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.todo-block{
+    
+    position: relative;
+    height: 20vh;
+    width: 100%; 
+    display:block;
+    padding: 30px 40px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+/* Adding an overlay */
+.todo-block::before {
+    content: "";
+    background-image: url(./img/4787747.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100rem;
+    position:absolute;
+    opacity: 0.6;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+h1 {
+    
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-style: italic;
+    text-shadow: 2px 3px black;
+    padding-left: -100px;
+}
+
+input {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    font-family: verdana, arial, helvetica;
+    border-radius: 5px;
+}
+
+.addBtn {
+    width: 25%;
+    margin-left:0;
+    padding: 10px;
+    background: rgb(198, 238, 238);
+    color:  #555;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+    color: #fff;
+}
+
+ul {
+    width: 50%;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 14px;
+    transition: 0.2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {          /* li etiketlerinden indexi çift olanların rengi bu olsun */
+    background: gray;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* creating a tick icon */
+ul li.checked::before {
+    content:"";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.fas {
+   position: absolute;
+   right: 0;
+   top: 0;
+   padding: 12px 16px 12px 16px; 
+   font-size: 20px;
+}
+
+.fas:hover {
+    color: red;
+}
+    

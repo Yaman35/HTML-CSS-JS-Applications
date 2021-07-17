@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b4849cf953.js" crossorigin="anonymous"></script>
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="todo-block">
+        <p>Today is: <span id="date"></span></p>
+        <h1>ToDo List</h1>  
+        <input type="text" id="myInput" placeholder="Things i need to do this day......"/>
+        <span class="addBtn" id="add_button">Add</span>
+    </div>
+
+    <ul id="myUL">
+
+    </ul>
+
+    <script>
+        var dt = new Date();                                                 // Bu ve altındaki kod günün tarihini html e yazdırmak için
+        document.getElementById("date").innerHTML = dt.toLocaleDateString();
+    </script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+<!-- <i class="fas fa-trash-alt"></i> -->
