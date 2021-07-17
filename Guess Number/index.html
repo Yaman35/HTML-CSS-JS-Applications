@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Find The Number</title>
+    <link rel="stylesheet" href = "./style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="guess">Guess The Number (1...100)</label><br>
+        <div>
+            <input type = "text" id = "guess">
+            <input type = "submit" value = "Check" id = "button">
+        </div>
+        <p id="write1"></p>
+        <p id="write2"></p>
+    </div>
+    <script>
+
+    guess = 1
+    var randomNumber = Math.floor(Math.random()*100+1)      // 1 ile 100 arasında bir sayı üretiyor
+    document.getElementById("button").onclick = () => {
+    
+    input = document.getElementById("guess").value;
+
+    if(isNaN(input)){  
+        // document.getElementById("write1").innerText = "Try Again...";
+        // document.getElementById("write1").style.color = "red";
+        var r = confirm("Please enter a number?");
+        if (r == true) {
+            document.getElementById("guess").value = '';
+        }
+    }
+    
+    
+    if (input > randomNumber) {
+        document.getElementById("write1").innerText="ENTER A LOWER NUMBER...";
+        document.getElementById("write2").innerText="Number of attemps: "+guess;
+        guess++
+    }
+    if (input < randomNumber) {
+        document.getElementById("write1").innerText="ENTER A GREATER NUMBER..."
+        document.getElementById("write2").innerText="Number of attemps: "+guess;
+        guess++
+    }
+    if (input == randomNumber) {
+        document.getElementById("write1").innerText="CONGRATULATIONS!!! YOU WIN..."
+        document.getElementById("write2").innerText="Number of attemps: "+guess;
+    }
+}
+    </script>
+</body>
+</html>

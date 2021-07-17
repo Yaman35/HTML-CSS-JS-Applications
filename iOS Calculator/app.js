@@ -23,6 +23,7 @@ const number6 = document.querySelector(".number-6");
 const number7 = document.querySelector(".number-7");
 const number8 = document.querySelector(".number-8");
 const number9 = document.querySelector(".number-9");
+
 const numbersArray = [
   number0,
   number1,
