@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.nav{
+    /*height: 6rem;*/
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color:#35424A;
+    font-size: 1.5rem;
+    padding: 0.75rem;
+    color: white;
+}
+ 
+nav{
+    border-bottom: 3px solid rebeccapurple;
+}
+
+.bars{
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.bars span{
+    color:rebeccapurple;
+}
+
+.fa-home{
+    color: rebeccapurple;
+}
+
+.fa-user,
+.fa-servicestack{
+    color: white;
+}
+
+.fab:hover,
+.fas:hover{
+    color: #E8491D;
+}
+
+main{
+    text-align: center;
+    color: white;
+    background-image: url(./img/showcase.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-position: center;
+    line-height: 4rem;
+}
+main h1{
+    font-size: 4rem;
+}
+main p{
+    font-size: 1.25rem;
+}
+
+#miBar{
+    border: 1px solid red;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color:#35424A;
+    padding: 1rem;
+    color: white;
+    align-items: center;
+}
+
+.miBar-right{
+    letter-spacing: 15px;
+}
+
+.subbutton{
+    color: white;
+    background-color: #E8491D;
+    width: 5rem;
+    border: 8px solid #E8491D;
+    transition: all ease-in-out 200ms;
+}
+
+.subbutton:hover{
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+.subinfo{
+    width: 15rem;
+    height: 2rem;
+    border: 2px solid #E8491D;
+    padding-left: 10px;
+}
+
+.subinfo:hover{
+    outline: none;
+}
+
+.subinfo:focus::placeholder{
+    color: transparent;
+}
+
+#infoBar{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.divHtml,
+.divCss,
+.divDesign{
+    text-align: center;
+}
+
+#infoBar img{
+    width: 100px;
+}
+
+#footBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#35424A;
+    color: white;
+    padding: 1.25rem;
+}
+
+.yaman{
+    width: 40px;
+    opacity: 0.7;
+    border:3px solid green;
+    border-radius: 50%;
+}
+
+.yaman:hover{
+    opacity: 1;
+}
+
+.byWho{
+    justify-self: flex-end;
+    align-self: flex-end;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    .nav {
+        justify-content: space-around;
+    }
+    #miBar {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 10px;
+    }
+    #infoBar{
+        flex-wrap: wrap;
+    }
+    .subinfo{
+        width: 5rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .bars {
+        margin: auto;
+    }
+
+    .nav li {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav li:last-child {
+        border-bottom: none;
+    }
+
+    .miBar-right{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
