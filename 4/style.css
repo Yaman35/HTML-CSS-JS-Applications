@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 255, 0, 0.1);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    padding: 10px;
+    width: 380px;
+    margin: auto;
+}
+
+.header {
+    width: 380px;
+    height: 270px;
+    background-image: url(./img/images1.jpg);
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.clear{                                 /* Refresh butonu */
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+
+.clear i{
+    font-size: 30px;
+}
+
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 5px red;
+}
+
+#date{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: blue;
+    font-size: 25px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.content {
+    border: 1px solid red;
+    width:380px;
+    height: 280px;
+    max-height:350px;
+    background-color: rgba(0, 25, 0, 0.3);
+    overflow: auto;
+}
+
+.item{
+    width:380px;
+    height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.8);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.item i.co{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:10px;
+    top:10px;
+}
+.item i.co:hover{
+    cursor: pointer;
+    color: chartreuse;
+}
+
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:50px;
+    top:5px;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color :blue;
+}
+.item i.de{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.de:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.add-item{
+    position: relative;
+    width: 360px;
+    height:40px;
+    background-color: rgba(0, 25, 0, 0.3);
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.8);
+}
+.add-item i{
+    position: absolute;
+    font-size: 35px;
+    color: rgb(65, 98, 246);
+}
+
+.add-item input{
+    position: absolute;
+    left: 55px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    padding-left:10px;
+}
