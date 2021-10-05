@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#container {
+  background-image: url("https://picsum.photos/id/685/800/400");
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 90%;
+  background-color: rgba(135, 207, 235, 0.418);
+  border-radius: 40px;
+  padding: 20px;
+  height: auto;
+  border: 1px dashed black;
+}
+
+label{
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+label:hover{
+    color: orangered;
+}
+
+#inputs{
+    text-align: center;
+}
+
+#inputs label{
+    margin-bottom: 5px;
+}
+
+input:focus{
+    outline: none;
+    border: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+#div1 {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  margin: 10px;
+  width: 95%;
+  height: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#radios {
+  margin-bottom: 10px;
+}
+
+textarea{
+    resize: none;
+    padding: 20px;
+    width : 100%;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+textarea:focus{
+    outline: none;
+    border: none;
+}
+textarea:focus::placeholder{
+    color: transparent;
+}
+
+button{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: skyblue;
+    color: white;
+    transition: all 0.5s;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: white;
+    color: skyblue;
+    transform: rotate(360deg);
+    cursor: pointer;
+   
+}
