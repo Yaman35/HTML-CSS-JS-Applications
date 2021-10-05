@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header id="header">
+                <h1 id="title">NET<span>FLIX</span></h1>
+                <h3 id="description">
+                    Thank you for signing up at Netflix. Tell us more about your self
+                </h3>
+            </header>
+            <section id="survey-form-container">
+                <div id="survey-form">
+                    <form action="result.html" method="GET" target="_blank">
+                        <div class="input-box">
+                            <label for="name">Name</label>
+                            <br>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="no">
+                        </div>
+                        <div class="input-box">
+                            <label for="age">Age</label>
+                            <br>
+                            <input type="number" id="age" name="age" placeholder="Age" min="18">
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="email" id="email" name="email" placeholder="Email" autocomplete="no">
+                        </div>
+                        <div class="input-box">
+                            <label for="content">Content</label>
+                            <br>
+                            <select name="content" id="dropdown">
+                                <option value="movie" disabled selected>Select a content type</option>
+                                <option value="movie">Movie</option>
+                                <option value="series">Series</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <label for="movie">Movie Types</label>
+                            <br>
+                            <input type="checkbox" name="movie" id="first-check" value="Comedy" >
+                            <label for="first-check" class="item-hover">Comedy</label>
+                            <br>
+                            <input type="checkbox" name="movie" id="second-check" value="action">
+                            <label for="second-check" class="item-hover">Action</label>
+                            <br>
+                            <input type="checkbox" name="movie" id="third-check" value="romance" checked="">
+                            <label for="third-check" class="item-hover">Romance</label>
+                            <br>
+                        </div>
+                        <div class="input-box">
+                            <label for="gender" >Gender</label><br>
+                            <input type="radio" name="gender" id="first-radio" value="male">
+                            <label for="first-radio" class="item-hover">Male</label><br>
+                            <input type="radio" name="gender" id="second-radio" value="female">
+                            <label for="second-radio" class="item-hover">Female</label><br>
+                            <input type="radio" name="gender" id="third-radio" value="other">
+                            <label for="third-radio" class="item-hover">Other</label><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="feedback">Feedback</label><br>
+                            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Any comment"></textarea>
+                        </div>
+                        <div id="form-submit">
+                            <button type="submit" id="form-button">Send</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </section>
+        </div>
+        
+        </body>
+</html>
