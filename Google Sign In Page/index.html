@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://img.icons8.com/color/32/000000/google-logo.png" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="section">
+      <h1>Sign In With</h1>
+      <div id="container">
+        <div id="facebook_btn">
+          <a href="https://www.facebook.com"><class class="fab fa-facebook-square"></class> Facebook</a>
+        </div>
+        <div id="google_btn">
+          <div id="google_logo">
+            <a href="https://google.com"
+              ><img src="./images/googlelogo.png" alt="googlelogo" width="30"/></a>
+          </div>
+          <a href="https://www.google.com" id="google_text">Google</a>
+        </div>
+      </div>
+      <div id="account">
+        <form action="result.html">
+          <label for="username">Username</label> <br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="account_input"/>
+
+          <label for="Password">Password <span> Forgot?</span> </label> <br />
+          <input
+            type="password"
+            name="Password"
+            id="Password"
+            class="account_input"/>
+
+          <input type="submit" value="Sign in"/>
+        </form>
+      </div>
+      <p>Not a member yet? <u> Sign up now </u></p>
+    </div>
+  </body>
+</html>
